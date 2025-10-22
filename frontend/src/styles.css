@@ -1,0 +1,8 @@
+body{font-family: Arial, Helvetica, sans-serif;background:#f5f7fb;margin:0;padding:20px;}
+.center{max-width:420px;margin:40px auto;padding:20px;background:#fff;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,0.06);}
+input, textarea{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #ddd;}
+button{padding:8px 12px;border-radius:6px;border:none;background:#2563eb;color:white;cursor:pointer;}
+.container{max-width:800px;margin:20px auto;}
+.card{background:#fff;padding:12px;border-radius:8px;margin-bottom:12px;box-shadow:0 4px 12px rgba(0,0,0,0.04);}
+.post{margin-bottom:8px;}
+.link{color:#2563eb;cursor:pointer;}
