@@ -1,26 +1,5 @@
-<<<<<<< HEAD
-# ConnectHub - Backend
-
-## Setup
-1. Install dependencies: `npm install`
-2. Create a `.env` with:
-   - MONGO_URI (optional)
-   - JWT_SECRET (optional)
-3. Start server: `npm run dev`
-
-API base: /api
-- POST /api/auth/register
-- POST /api/auth/login
-- GET /api/users/me
-- POST /api/users/:id/follow
-- GET /api/users/search?q=
-- POST /api/posts
-- GET /api/posts/feed
-- POST /api/posts/:id/like
-- POST /api/posts/:id/comment
-=======
-📱 ConnectHub – MERN Project (Minimal)
-A minimal yet complete full-stack social media app built with the MERN stack. Designed as a functional baseline for the Scaler course project.
+📱 ConnectHub – Full-stack MERN Social Media App
+A minimal yet functional full-stack social media platform built with the MERN stack. Designed as a baseline project for the Scaler course, ConnectHub supports user authentication, posting, following, and feed generation.
 
 📁 Project Structure
 Code
@@ -28,27 +7,59 @@ Connecthub/
 ├── backend/   # Express + MongoDB backend
 ├── frontend/  # Minimal React frontend
 └── README.md
-🚀 Quick Start (Local Setup)
-1. Start MongoDB locally
+🚀 Quick Start
+1. Start MongoDB Locally
 Default URI: mongodb://127.0.0.1:27017
 
 2. Backend Setup
 bash
 cd backend
 npm install
-# Optional: Create a .env file with:
-# MONGO_URI=<your_mongo_uri>
-# JWT_SECRET=<your_jwt_secret>
+Create a .env file with the following (optional if using defaults):
+
+Code
+MONGO_URI=<your_mongo_uri>
+JWT_SECRET=<your_jwt_secret>
+Start the backend server:
+
+bash
 npm run dev
 3. Frontend Setup
 bash
 cd frontend
 npm install
 npm start
-📝 Notes
-Cloudinary/image uploads are kept simple: frontend posts content with optional image URL.
+🔌 API Endpoints
+Base URL: /api
 
-This is a functional baseline. You can extend it with:
+Auth
+
+POST /api/auth/register – Register a new user
+
+POST /api/auth/login – Login and receive JWT
+
+User
+
+GET /api/users/me – Get current user profile
+
+POST /api/users/:id/follow – Follow a user
+
+GET /api/users/search?q= – Search users
+
+Posts
+
+POST /api/posts – Create a post
+
+GET /api/posts/feed – Get feed from followed users
+
+POST /api/posts/:id/like – Like a post
+
+POST /api/posts/:id/comment – Comment on a post
+
+📝 Notes
+Image uploads are simplified: frontend sends an optional image URL.
+
+Extendable features:
 
 Cloudinary integration
 
@@ -58,14 +69,7 @@ Profile editing
 
 Pagination
 
-Indexing and search
+Indexing & search
 
 📚 About
-“ConnectHub – Full-stack MERN social media app project for Scaler course”
-
-📊 Tech Stack
-Language	Usage
-JavaScript	93.6%
-CSS	4.8%
-HTML	1.6%
->>>>>>> d0e7d9a3d339a9c01a1e2f6e313a1ed955421d3f
+This project was built as part of the Scaler Academy curriculum to demonstrate full-stack proficiency using the MERN stack.
