@@ -42,19 +42,11 @@ User
 
 GET /api/users/me – Get current user profile
 
-POST /api/users/:id/follow – Follow a user
-
-GET /api/users/search?q= – Search users
-
 Posts
 
 POST /api/posts – Create a post
 
-GET /api/posts/feed – Get feed from followed users
-
 POST /api/posts/:id/like – Like a post
-
-POST /api/posts/:id/comment – Comment on a post
 
 📝 Notes
 Image uploads are simplified: frontend sends an optional image URL.
